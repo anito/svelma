@@ -1,14 +1,14 @@
 <script context="module">
-  export function fitlerProps(props) {
+  export function filterProps(props) {
     const { active, type, position, duration } = props
     return { active, type, position, duration }
   }
+  export const notices = {}
 </script>
 
 <script>
   import { createEventDispatcher, onDestroy, onMount } from 'svelte'
   import { fly, fade } from 'svelte/transition'
-  import Notices, { notices } from './Notices.svelte'
 
   const dispatch = createEventDispatcher()
 
@@ -39,23 +39,41 @@
   }
 
   function setupContainers() {
+    if (!notices.topLeft) {
+      notices.topLeft = div()
+      notices.topLeft.className = 'notices is-top-left'
+      document.body.appendChild(notices.topLeft)
+    }
     if (!notices.top) {
       notices.top = div()
       notices.top.className = 'notices is-top'
       document.body.appendChild(notices.top)
+    }
+    if (!notices.topRight) {
+      notices.topRight = div()
+      notices.topRight.className = 'notices is-top-right'
+      document.body.appendChild(notices.topRight)
+    }
+    if (!notices.bottomRight) {
+      notices.bottomRight = div()
+      notices.bottomRight.className = 'notices is-bottom-right'
+      document.body.appendChild(notices.bottomRight)
     }
     if (!notices.bottom) {
       notices.bottom = div()
       notices.bottom.className = 'notices is-bottom'
       document.body.appendChild(notices.bottom)
     }
+    if (!notices.bottomLeft) {
+      notices.bottomLeft = div()
+      notices.bottomLeft.className = 'notices is-bottom-left'
+      document.body.appendChild(notices.bottomLeft)
+    }
   }
 
   function chooseParent() {
-    parent = notices.top
-    if (position && position.indexOf('is-bottom') === 0) parent = notices.bottom
-
-    parent.insertAdjacentElement('afterbegin', el)
+    let div, divName = position.replace('is-', '').replace(/-([a-z])/g, g => g[1].toUpperCase() )
+    if(div = notices[divName]) div.insertAdjacentElement('afterbegin', el)
   }
 
   onMount(() => {
@@ -69,7 +87,7 @@
 </script>
 
 <style lang="scss">
-  .notice {
+  :global(.notice) {
     display: inline-flex;
     pointer-events: auto;
 
@@ -86,6 +104,35 @@
     &.is-top-right,
     &.is-bottom-right {
       align-self: flex-end;
+    }
+  }
+
+  :global(.notices) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 3em;
+    z-index: 1000;
+    pointer-events: none;
+    display: flex;
+
+    &[class*=is-top] {
+      flex-direction: column;
+    }
+
+    &[class*=is-bottom] {
+      flex-direction: column-reverse;
+    }
+
+    [class*='has-background-'] .text {
+      color: transparent !important;
+      filter: invert(1) brightness(2.5) grayscale(1) contrast(9);
+      background: inherit;
+      background-clip: text !important;
+      -webkit-background-clip: text !important;
     }
   }
 </style>

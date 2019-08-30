@@ -16,7 +16,9 @@
   export let jsdoc
 
   function open(props) {
-    Snackbar.create({ message: 'I am a snackbar message', ...props })
+    let defaults = { message: 'I am a Snackbar' }
+    props = Object.assign(defaults, props)
+    Snackbar.create(props)
   }
 </script>
 
@@ -31,23 +33,25 @@
 <DocHeader title="Snackbar" subtitle="Bigger than a toast, smaller than a dialog" />
 
 <Example code={`<script>
-  import { Button, Toast } from 'svelma'
+  import { Button, Snackbar } from 'svelma'
 
-  function open(type, position) {
-    Toast.create({ message: 'I am a toast', type, position })
+  function open(props) {
+    let defaults = { message: 'I am a Snackbar' }
+    props = Object.assign(defaults, props)
+    Snackbar.create(props)
   }
 </script>
 
-<Button on:click={() => open()}>Toast</Button>
-<Button type="is-success" on:click={() => open('is-success')}>Success</Button>
-<Button type="is-danger" on:click={() => open('is-danger', 'is-bottom-right')}>Bottom Right</Button>
-<Button type="is-primary" on:click={() => open('is-primary', 'is-top', 'has-background-grey-lighter')}>Custom Background</Button>`}>
+<Button on:click={open}>Default Snackbar</Button>
+<Button type="is-success" on:click={() => open({ message: 'Success', type: 'is-success', position: 'is-bottom-left', duration: 1000 })}>Successs</Button>
+<Button type="is-danger" on:click={() => open({ message: 'Danger', type: 'is-danger', actionText: 'retry', position: 'is-top-left' })}>Top Left</Button>
+<Button type="is-primary" on:click={() => open({ message: 'Customized Background', background: 'has-background-grey-lighter', position: 'is-bottom'  })}>Custom Background</Button>`}>
   <div slot="preview">
     <div class="buttons">
-      <Button on:click={() => open()}>Default Snackbar</Button>
-      <Button type="is-success" on:click={() => open({ type: 'is-success' })}>Success</Button>
-      <Button type="is-danger" on:click={() => open({ type: 'is-danger', actionText: 'retry', position: 'is-top-right' })}>Top Right</Button>
-      <Button type="is-primary" on:click={() => open({ background: 'has-background-grey-lighter' })}>Custom Background</Button>
+      <Button on:click={open}>Default Snackbar</Button>
+      <Button type="is-success" on:click={() => open({ message: 'Success', type: 'is-success', position: 'is-bottom-left', duration: 1000 })}>Successs</Button>
+      <Button type="is-danger" on:click={() => open({ message: 'Danger', type: 'is-danger', actionText: 'retry', position: 'is-top-left' })}>Top Left</Button>
+      <Button type="is-primary" on:click={() => open({ message: 'Customized Background', background: 'has-background-grey-lighter', position: 'is-bottom'  })}>Custom Background</Button>
     </div>
   </div>
 </Example>
