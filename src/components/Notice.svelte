@@ -73,6 +73,7 @@
 
   function chooseParent() {
     let div, divName = position.replace('is-', '').replace(/-([a-z])/g, g => g[1].toUpperCase() )
+    console.log(divName)
     if(div = notices[divName]) div.insertAdjacentElement('afterbegin', el)
   }
 
