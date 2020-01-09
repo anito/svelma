@@ -2,130 +2,130 @@
   "bundler": "rollup",
   "shimport": "1.0.1",
   "assets": {
-    "main": "client.b7e758d0.js"
+    "main": "client.12c7a10e.js"
   },
   "css": {
     "main": "main.2286594899.css",
     "chunks": {
       "index.svelte": [
-        "index.8182ae1f.css",
-        "chunk.b9034416.css"
+        "index.f26aa4e8.css",
+        "index.4c4f0207.css"
       ],
       "components/notification.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/collapse.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/progress.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "components/snackbar.svelte": [
-        "snackbar.3a5c6a49.css",
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "snackbar.36dc0239.css",
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/message.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "components/button.svelte": [
-        "button.98327a2f.css",
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "button.069aa569.css",
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/dialog.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/switch.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/field.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/input.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/modal.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "components/toast.svelte": [
-        "toast.9c325640.css",
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "toast.4ad65357.css",
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "components/icon.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "components/tabs.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css",
-        "chunk.472f5470.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css",
+        "JSDoc.7dd98171.css"
       ],
       "install/index.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css"
       ],
       "about.svelte": [],
       "bulma/intro.svelte": [],
       "bulma/media.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "bulma/table.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "bulma/tiles.svelte": [
-        "tiles.a51ed5ef.css",
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "tiles.6380ba15.css",
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "bulma/hero.svelte": [
-        "chunk.b9034416.css",
-        "chunk.162a27e3.css",
-        "chunk.146fff5a.css"
+        "index.4c4f0207.css",
+        "Code.f93e0618.css",
+        "Example.a8210ce8.css"
       ],
       "blog/index.svelte": [
-        "index.567f11a9.css"
+        "index.f84a0b8f.css"
       ],
       "blog/[slug].svelte": [
-        "[slug].9fc698a9.css"
+        "[slug].05afc59a.css"
       ]
     }
   }
