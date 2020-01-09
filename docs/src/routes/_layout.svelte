@@ -22,7 +22,7 @@
   let url
 
   page.subscribe(({ path }) => {
-    url = 'https://svelma.webpremiere.dev' + `/svelma/${path}`.replace(/\/\//g, '/').replace(/([^\/]$)/, '$1/')
+    url = 'https://svelma.webpremiere.dev' + `/${path}`.replace(/\/\//g, '/').replace(/([^\/]$)/, '$1/')
   })
 
   // afterUpdate(function() {

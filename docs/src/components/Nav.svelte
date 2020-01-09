@@ -1,7 +1,7 @@
 <script>
   export let segment
 
-  const rootUrl = process.env.NODE_ENV === 'development' ? '/' : '/svelma'
+  const rootUrl = process.env.NODE_ENV === 'development' ? '/' : '/'
   const github = 'https://github.com/c0bra/svelma'
 </script>
 
